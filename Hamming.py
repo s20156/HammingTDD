@@ -3,7 +3,7 @@ class Hamming:
         self.nucleotides = ["A", "T", "C", "G"]
 
     def distance(self, strand1, strand2):
-        hamming_value = 0
+        hamming_value = 1
         if len(strand1) != len(strand2):
             raise ValueError("Strands of different lengths")
         for nt, nt2 in zip(strand1, strand2):
